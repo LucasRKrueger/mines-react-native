@@ -22,7 +22,6 @@ export default props => {
         if (nearMines > 2 && nearMines < 6) color = '#F9060A'
         if (nearMines >= 6) color = '#F221A9'
     }
-    console.debug(styleField)
     return (
         <View style={styleField}>
             {!mined && opened && nearMines > 0 ?
